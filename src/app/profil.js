@@ -38,6 +38,9 @@ export default function Profil() {
         <p className="text-sm text-justify text-center ml-8 mr-8 text-center font-[family-name:var(--font-geist-mono)]">
             PARCOURS PROFESSIONNEL
         </p>
+        <p className="text-sm text-justify text-center ml-8 mr-8 text-center font-[family-name:var(--font-geist-mono)]">
+            TEST
+        </p>
         </div>   
     </section>
     )
