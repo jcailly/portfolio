@@ -1,6 +1,6 @@
 // import { useRef } from 'react';
 import Image from "next/image";
-import Button from "../components/button.js"
+import { Button } from "@/components/ui/button.jsx"
 import Link from "next/link.js";
 
 
@@ -15,7 +15,10 @@ export default function Header({ goToProfile }) {
         items-center justify-between
         w-screen flex"
           >
-            <Button onClick={goToProfile} text={"Profil"} />
+            {/* <Button onClick={goToProfile} text={"Profil"} /> */}
+            <Button variant="personal" onClick={goToProfile}
+            //   text={"Téléchargez mon CV"}
+              >Profil</Button>
             <div className="m-1 flex gap-[10px]">
               <Link href="https://github.com/jcailly?tab=repositories" target="_blank">
                 <Image

@@ -1,14 +1,16 @@
 import Image from "next/image";
 import Link from "next/link.js";
-import Button from "../components/button.js"
+import { Button } from "@/components/ui/button.jsx";
 
 export default function Profil() {
     return (
-    <section className="snap-start pt-[80px] pb-[60px]
+    <section className="items-center justify-center
+    snap-start pt-[100px] pb-[60px]
     flex-none flex-auto
     w-screen h-screen
     overflow-auto scrollbar-hide">
-        <div className="flex flex-col gap-[32px] row-start-2 items-center">
+        <div className="w-full flex justify-center">
+        <div className="max-w-[850px] flex flex-col gap-[32px] row-start-2 items-center justify-center">
         <Image 
             className="rounded-full"
             src="/profil.jpg"
@@ -23,7 +25,7 @@ export default function Profil() {
             Développeur d'applications en reconversion après une carrière de 10 ans dans le secteur automobile premium, je mets aujourd’hui mon sens du service, ma rigueur et ma capacité d’adaptation au service de projets numériques. Actuellement en formation à Zone01 Normandie, j’apprends à concevoir et développer des applications web robustes, évolutives et centrées utilisateur, en suivant une pédagogie par projets et en autonomie.
         </p>
         </div>
-        <Button text={"Téléchargez mon CV"}/>
+        <Button variant="personal">Téléchargez mon CV</Button>
         <div className="bg-[#F7F9FF] dark:bg-[#11131F] p-4 ml-8 mr-8 shadow-md rounded-[8px]">
         <h2 className="text-xl flex mb-2">Stack :</h2>
         <div className="items-center justify-center gap-[10px] flex flex-wrap text-sm text-justify text-center text-center">
@@ -46,7 +48,7 @@ export default function Profil() {
             <Image src="/Tailwind_colored_logo.png" width={75} height={75} alt="Tailwindcss logo" className="p-2 dark:invert"/>
             </Link>
             <Link href="https://www.sqlite.org/" target="_blank">
-            <Image src="/SQLite_logo.png" width={75} height={75} alt="SQLite logo" className="p-2"/>
+            <Image src="/SQLite_logo.png" width={150} height={150} alt="SQLite logo" className="p-2"/>
             </Link>
             <Link href="https://git-scm.com/" target="_blank">
             <Image src="/Git_icon.svg.png" width={75} height={75} alt="Git logo" className="p-2"/>
@@ -59,7 +61,8 @@ export default function Profil() {
         <p className="text-sm text-justify text-center ml-8 mr-8 text-center">
             TEST
         </p>
-        </div>   
+        </div>
+        </div>
     </section>
     )
 }

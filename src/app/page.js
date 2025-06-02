@@ -37,7 +37,7 @@ export default function Home() {
   return (
     <div className="flex flex-col h-screen">
     <Header goToProfile={() => goToProfile()} />    
-    <div ref={containerRef} className="flex flex-row overflow-x-auto snap-x snap-mandatory scroll-smooth h-screen scrollbar-hide">
+    <div ref={containerRef} className="flex flex-row overflow-x-auto snap-x snap-mandatory scroll-smooth h-screen scrollbar-hide items-center">
       <Profil />
       <Projet_1 />
       <Projet_2 />
