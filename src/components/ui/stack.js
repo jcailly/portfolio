@@ -7,7 +7,7 @@ export default function StackLogos() {
     return (
         <TooltipProvider>
         <div className="bg-[#F7F9FF] dark:bg-[#11131F] p-4 ml-8 mr-8 shadow-md rounded-[8px]">
-        <h2 className="text-xl flex mb-2">Stack :</h2>
+        <h2 className="text-xl flex mb-2">Stack:</h2>
         <div className="items-center justify-center gap-[10px] flex flex-wrap text-sm text-justify text-center text-center">
             <Tooltip>
                 <TooltipTrigger asChild>
