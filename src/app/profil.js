@@ -16,22 +16,10 @@ export default function Profil() {
             height={38}
         />
         <h1 className="text-2xl text-center font-[family-name:var(--font-geist-mono)]">Jérémy CAILLY</h1>
-        <p className="text-sm text-justify text-center ml-8 mr-8 text-center font-[family-name:var(--font-geist-mono)]">
+        <div className="bg-[#F7F9FF] dark:bg-[#11131F] shadow-md text-sm text-justify text-center p-4 ml-8 mr-8 rounded-[8px] text-center font-[family-name:var(--font-geist-mono)]">
             Développeur d'applications en reconversion après une carrière de 10 ans dans le secteur automobile premium, je mets aujourd’hui mon sens du service, ma rigueur et ma capacité d’adaptation au service de projets numériques. Actuellement en formation à Zone01 Normandie, j’apprends à concevoir et développer des applications web robustes, évolutives et centrées utilisateur, en suivant une pédagogie par projets et en autonomie.
-        </p>
+        </div>
         <Button text={"Téléchargez mon CV"} />
-        {/* <button
-            className="pointer-events-auto
-              m-2 p-2
-              bg-[#EDF2FE] hover:bg-[#E6E7FF]
-              dark:bg-[#182449] dark:hover:bg-[#1D2E62]
-              transition-colors
-              cursor-pointer
-              font-[family-name:var(--font-geist-mono)]
-              rounded-[8px]
-              border-[1px] border-[#ABBDF9] dark:border-[#3A4F97]
-              hover:ring-1 ring-[#8DA4EF] dark:ring-[#435DB1]">Téléchargez mon CV
-        </button> */}
         <p className="text-sm text-justify text-center ml-8 mr-8 text-center font-[family-name:var(--font-geist-mono)]">
             TECHNOLOGIES UTILISEES
         </p>

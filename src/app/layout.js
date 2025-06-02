@@ -19,7 +19,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable} antialiased h-screen overflow-y-scroll scrollbar-hide`}>
-      <body>
+      <body className="bg-[##FDFDFE] dark:bg-[#141726]">
         {children}
       </body>
     </html>

@@ -1,6 +1,7 @@
 // import { useRef } from 'react';
 import Image from "next/image";
 import Button from "../components/button.js"
+import Link from "next/link.js";
 
 
 export default function Header({ goToProfile }) {
@@ -16,7 +17,7 @@ export default function Header({ goToProfile }) {
           >
             <Button onClick={goToProfile} text={"Profil"} />
             <div className="m-1 flex gap-[10px]">
-              <a href="https://github.com/jcailly?tab=repositories" target="_blank">
+              <Link href="https://github.com/jcailly?tab=repositories" target="_blank">
                 <Image
                   className="dark:invert m-2"
                   src="/github_black.png"
@@ -25,8 +26,8 @@ export default function Header({ goToProfile }) {
                   height={5}
                   priority
                 />
-              </a>
-              <a href="https://www.linkedin.com/in/j%C3%A9r%C3%A9my-cailly-605792155/" target="_blank">
+              </Link>
+              <Link href="https://www.linkedin.com/in/j%C3%A9r%C3%A9my-cailly-605792155/" target="_blank">
                 <Image
                   className="dark:invert m-2"
                   src="/linkedin-black.png"
@@ -35,7 +36,7 @@ export default function Header({ goToProfile }) {
                   height={19}
                   priority
                 />
-              </a>
+              </Link>
           </div>
         </header>
     )
