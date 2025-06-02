@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link.js";
 import Button from "../components/button.js"
 
 export default function Profil() {
@@ -15,18 +16,47 @@ export default function Profil() {
             width={180}
             height={38}
         />
-        <h1 className="text-2xl text-center font-[family-name:var(--font-geist-mono)]">Jérémy CAILLY</h1>
-        <div className="bg-[#F7F9FF] dark:bg-[#11131F] shadow-md text-sm text-justify text-center p-4 ml-8 mr-8 rounded-[8px] text-center font-[family-name:var(--font-geist-mono)]">
+        <h1 className="text-2xl text-center">Jérémy CAILLY</h1>
+        <div className="bg-[#F7F9FF] dark:bg-[#11131F] shadow-md p-4 ml-8 mr-8 rounded-[8px]">
+        <h2 className="text-xl flex mb-2">A propos de moi:</h2>
+        <p className="text-sm text-justify text-center text-center">
             Développeur d'applications en reconversion après une carrière de 10 ans dans le secteur automobile premium, je mets aujourd’hui mon sens du service, ma rigueur et ma capacité d’adaptation au service de projets numériques. Actuellement en formation à Zone01 Normandie, j’apprends à concevoir et développer des applications web robustes, évolutives et centrées utilisateur, en suivant une pédagogie par projets et en autonomie.
-        </div>
-        <Button text={"Téléchargez mon CV"} />
-        <p className="text-sm text-justify text-center ml-8 mr-8 text-center font-[family-name:var(--font-geist-mono)]">
-            TECHNOLOGIES UTILISEES
         </p>
-        <p className="text-sm text-justify text-center ml-8 mr-8 text-center font-[family-name:var(--font-geist-mono)]">
+        </div>
+        <Button text={"Téléchargez mon CV"}/>
+        <div className="bg-[#F7F9FF] dark:bg-[#11131F] p-4 ml-8 mr-8 shadow-md rounded-[8px]">
+        <h2 className="text-xl flex mb-2">Stack :</h2>
+        <div className="items-center justify-center gap-[10px] flex flex-wrap text-sm text-justify text-center text-center">
+            <Link href="https://go.dev/" target="_blank">
+            <Image src="/Golang_logo.png" width={75} height={75} alt="Golang logo" className="p-2"/>
+            </Link>
+            <Link href="https://www.rust-lang.org/fr" target="_blank">
+            <Image src="/Rust-logo.png" width={75} height={75} alt="Rust logo" className="p-2"/>
+            </Link>
+            <Link href="https://www.javascript.com/" target="_blank">
+            <Image src="/Javascript_colored_logo.png" width={75} height={75} alt="Javascript logo" className="p-2"/>
+            </Link>
+            <Link href="https://fr.react.dev/" target="_blank">
+            <Image src="/React_colored_logo.png" width={75} height={75} alt="React logo" className="logo-react p-2"/>
+            </Link>
+            <Link href="https://nextjs.org/" target="_blank">
+            <Image src="/next.svg" width={75} height={75} alt="Next.js logo" className="dark:invert p-2"/>
+            </Link>
+            <Link href="https://tailwindcss.com/" target="_blank">
+            <Image src="/Tailwind_colored_logo.png" width={75} height={75} alt="Tailwindcss logo" className="p-2 dark:invert"/>
+            </Link>
+            <Link href="https://www.sqlite.org/" target="_blank">
+            <Image src="/SQLite_logo.png" width={75} height={75} alt="SQLite logo" className="p-2"/>
+            </Link>
+            <Link href="https://git-scm.com/" target="_blank">
+            <Image src="/Git_icon.svg.png" width={75} height={75} alt="Git logo" className="p-2"/>
+            </Link>
+        </div>
+        </div>
+        <p className="text-sm text-justify text-center ml-8 mr-8 text-center">
             PARCOURS PROFESSIONNEL
         </p>
-        <p className="text-sm text-justify text-center ml-8 mr-8 text-center font-[family-name:var(--font-geist-mono)]">
+        <p className="text-sm text-justify text-center ml-8 mr-8 text-center">
             TEST
         </p>
         </div>   

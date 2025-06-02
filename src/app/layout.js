@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
       className={`${geistSans.variable} ${geistMono.variable} antialiased h-screen overflow-y-scroll scrollbar-hide`}
       suppressHydrationWarning
       >
-      <body className="bg-[##FDFDFE] dark:bg-[#141726]">
+      <body className="bg-[##FDFDFE] dark:bg-[#141726] font-[family-name:var(--font-geist-mono)]">
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
         {children}
         </ThemeProvider>

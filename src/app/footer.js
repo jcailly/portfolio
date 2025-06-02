@@ -6,7 +6,7 @@ export default function Footer() {
     return (
       <footer className="bg-[#F7F9FF] dark:bg-[#11131F]
       row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <div className="font-[family-name:var(--font-geist-mono)]">Powered by:</div>
+        <div className="">Powered by:</div>
         {/* <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
           href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"

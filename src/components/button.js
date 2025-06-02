@@ -8,7 +8,6 @@ export default function Button({ onClick, text }) {
               dark:bg-[#182449] dark:hover:bg-[#1D2E62]
               transition-colors
               cursor-pointer
-              font-[family-name:var(--font-geist-mono)]
               rounded-[8px]
               border-[1px] border-[#ABBDF9] dark:border-[#3A4F97]
               hover:ring-1 ring-[#8DA4EF] dark:ring-[#435DB1]">{text}

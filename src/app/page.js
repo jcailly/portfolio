@@ -72,7 +72,7 @@ export default function Home() {
           />
         </button>
       </div>
-    <Footer className="fixed"/>
+    <Footer className=""/>
     </div>
   );
 }

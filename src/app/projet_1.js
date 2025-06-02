@@ -11,7 +11,7 @@ export default function Projet_1() {
           width={180}
           height={38}
         />
-        <h1 className="list-inside list-decimal text-2xl text-center sm:text-left font-[family-name:var(--font-geist-mono)]">Projet 1</h1>
+        <h1 className="list-inside list-decimal text-2xl text-center sm:text-left">Projet 1</h1>
       </div>   
     </section>
     )
