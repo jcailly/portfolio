@@ -1,5 +1,6 @@
 import "./globals.css";
 import { Geist, Geist_Mono } from "next/font/google";
+import { ThemeProvider } from "@/components/theme-provider"
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -18,9 +19,14 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${geistSans.variable} ${geistMono.variable} antialiased h-screen overflow-y-scroll scrollbar-hide`}>
+    <html lang="fr"
+      className={`${geistSans.variable} ${geistMono.variable} antialiased h-screen overflow-y-scroll scrollbar-hide`}
+      suppressHydrationWarning
+      >
       <body className="bg-[##FDFDFE] dark:bg-[#141726]">
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
         {children}
+        </ThemeProvider>
       </body>
     </html>
   );

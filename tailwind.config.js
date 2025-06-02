@@ -2,6 +2,7 @@
 
 
 export default {
+  darkMode: "class",
   content: [
     './src/app/**/*.{js,ts}',         // <-- correct path
   ],
