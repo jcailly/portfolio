@@ -6,7 +6,7 @@ import Link from "next/link";
 export default function Footer() {
     return (
       <div className="bg-[#F7F9FF] dark:bg-[#11131F]
-      row-start-3 flex gap-[24px] flex-wrap items-center justify-center mb-0">
+      row-start-3 flex gap-[24px] flex-wrap items-center justify-center mb-0 z-50">
         <div className="">Powered by:</div>
         <Link href="https://www.javascript.com" target="_blank">
           <Image

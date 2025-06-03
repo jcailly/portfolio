@@ -55,15 +55,9 @@ export default function Profil() {
                         </Link>
                     </ScrollArea>
                 </div>
-                <Button variant="personal"
-                        onClick={() => {
-                            const link = document.createElement("a");
-                            link.href = "/CV.pdf";
-                            link.download = "CV_Jeremy_Cailly.pdf";
-                            document.body.appendChild(link);
-                            link.click();
-                            document.body.removeChild(link);
-                        }}>Téléchargez mon CV</Button>
+                <Link href="/CV.pdf" download="CV_Jeremy_Cailly.pdf">
+                    <Button variant="personal">Téléchargez mon CV</Button>
+                </Link>
             </div>
         </div>
     </section>
