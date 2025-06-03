@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
       >
       <body className="bg-[##FDFDFE] dark:bg-[#141726] font-[family-name:var(--font-geist-mono)]">
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-        {children}
+          {children}
         </ThemeProvider>
       </body>
     </html>

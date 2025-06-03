@@ -1,12 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
+import { Card } from "./card";
 
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 
 export default function StackLogos() {
     return (
         <TooltipProvider>
-        <div className="bg-[#F7F9FF] dark:bg-[#11131F] p-4 ml-8 mr-8 w-full shadow-sm dark:shadow-[#304384] rounded-[8px] ">
+        <Card>
         <h2 className="text-xl flex mb-2">Stack:</h2>
         <div className="items-center justify-center gap-[10px] flex flex-wrap text-sm text-justify text-center text-center">
             <Tooltip>
@@ -94,7 +95,7 @@ export default function StackLogos() {
                 </TooltipContent>
             </Tooltip>
         </div>
-        </div>
+        </Card>
         </TooltipProvider>
     )
 }
