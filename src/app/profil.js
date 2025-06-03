@@ -31,27 +31,27 @@ export default function Profil() {
                 <StackLogos />
                 <div className="bg-[#F7F9FF] dark:bg-[#11131F] shadow-md w-full p-4 ml-8 mr-8 rounded-[8px]">
                     <h2 className="text-xl flex mb-2">Certifications:</h2>
-                    <ScrollArea className="h-[200px] rounded-md border-[1px] border-white">
-                        <h3 className="p-4 border-white border-[1px]">Titre RNCP Concepteur Développeur d'Applications (Obtention Nov 2025)</h3>
+                    <ScrollArea className="h-[200px] rounded-md border-[1px] border-white border-[#ABBDF9] dark:border-[#3A4F97]">
+                        <h3 className="p-4 border-b-[1px] border-b-[#ABBDF9] dark:border-b-[#3A4F97] bg-[#EDF2FE] hover:bg-[#E6E7FF] dark:bg-[#182449] dark:hover:bg-[#1D2E62]">Titre RNCP Concepteur Développeur d'Applications (Obtention Nov 2025)</h3>
                         <Link
                             href="https://nextjs.org/learn/certificate?course=react-foundations&user=64283&certId=react-foundations-64283-1748901888572"
                             target="_blank">
-                            <h3 className="p-4 border-white border-[1px]">React Foundation for Next.js</h3>
+                            <h3 className="p-4 border-b-[1px] border-b-[#ABBDF9] dark:border-b-[#3A4F97] bg-[#EDF2FE] hover:bg-[#E6E7FF] dark:bg-[#182449] dark:hover:bg-[#1D2E62]">React Foundation for Next.js</h3>
                         </Link>
                         <Link
                             href="https://nextjs.org/learn/certificate?course=pages-router&user=64283&certId=pages-router-64283-1748902404888"
                             target="_blank">
-                            <h3 className="p-4 border-white border-[1px]"> Next.js Pages Router Fundamentals</h3>
+                            <h3 className="p-4 border-b-[1px] border-b-[#ABBDF9] dark:border-b-[#3A4F97] bg-[#EDF2FE] hover:bg-[#E6E7FF] dark:bg-[#182449] dark:hover:bg-[#1D2E62]"> Next.js Pages Router Fundamentals</h3>
                         </Link>
                         <Link
                             href="https://nextjs.org/learn/certificate?course=seo&user=64283&certId=seo-64283-1748902445803"
                             target="_blank">
-                            <h3 className="p-4 border-white border-[1px]">Next.js SEO Fundamentals</h3>
+                            <h3 className="p-4 border-b-[1px] border-b-[#ABBDF9] dark:border-b-[#3A4F97] bg-[#EDF2FE] hover:bg-[#E6E7FF] dark:bg-[#182449] dark:hover:bg-[#1D2E62]">Next.js SEO Fundamentals</h3>
                         </Link>
                         <Link
                             href="https://nextjs.org/learn/certificate?course=dashboard-app&user=64283&certId=dashboard-app-64283-1748902472803"
                             target="_blank">
-                            <h3 className="p-4 border-white border-[1px]">Next.js App Router Fundamentals</h3>
+                            <h3 className="p-4 bg-[#EDF2FE] hover:bg-[#E6E7FF] dark:bg-[#182449] dark:hover:bg-[#1D2E62]">Next.js App Router Fundamentals</h3>
                         </Link>
                     </ScrollArea>
                 </div>
