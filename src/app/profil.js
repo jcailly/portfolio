@@ -24,9 +24,19 @@ export default function Profil() {
                 <h1 className="text-2xl text-center">Jérémy Cailly<br />Développeur Full-Stack</h1>
                 <div className="bg-[#F7F9FF] dark:bg-[#11131F] shadow-sm dark:shadow-[#304384] w-full p-4 ml-8 mr-8 rounded-[8px]">
                     <h2 className="text-xl flex mb-2">A propos de moi:</h2>
-                    <p className="text-sm text-justify text-center text-center">
-                        Développeur d'applications en reconversion après une carrière de 10 ans dans le secteur automobile premium à Rouen, je mets aujourd’hui mon sens du service, ma rigueur et ma capacité d’adaptation au service de projets numériques. Actuellement en formation à Zone01 Normandie, j’apprends à concevoir et développer des applications web robustes, évolutives et centrées utilisateur, en suivant une pédagogie par projets et en autonomie.
-                    </p>
+                    <div className="text-sm text-justify text-center text-center">
+                        <p>Développeur d'applications en reconversion après une carrière de 10 ans dans le secteur
+                            automobile premium à Rouen, je mets aujourd’hui mon sens du service, ma rigueur et ma
+                            capacité d’adaptation au service de projets numériques. Actuellement en formation à Zone01
+                            Normandie, j’apprends à concevoir et développer des applications web robustes, évolutives
+                            et centrées utilisateur, en suivant une pédagogie par projets et en autonomie.</p>
+                            <Link href="/CV.pdf" target="_blank" rel="noopener noreferrer">
+                                <Button variant="personal">
+                                    Téléchargez mon CV
+                                </Button>
+                            </Link>
+                    </div>
+
                 </div>
                 <StackLogos />
                 <div className="bg-[#F7F9FF] dark:bg-[#11131F] shadow-sm dark:shadow-[#304384] w-full p-4 ml-8 mr-8 rounded-[8px]">
@@ -55,9 +65,6 @@ export default function Profil() {
                         </Link>
                     </ScrollArea>
                 </div>
-                <Link href="/CV.pdf" download="CV_Jeremy_Cailly.pdf">
-                    <Button variant="personal">Téléchargez mon CV</Button>
-                </Link>
             </div>
         </div>
     </section>
