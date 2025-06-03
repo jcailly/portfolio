@@ -13,7 +13,8 @@ export default function Header({ goToProfile }) {
         shadow-md
         bg-[#F7F9FF] dark:bg-[#11131F]
         items-center justify-between
-        w-screen flex"
+        w-screen flex
+        z-50"
           >
             {/* <Button onClick={goToProfile} text={"Profil"} /> */}
             <Button variant="personal" onClick={goToProfile}

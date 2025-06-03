@@ -28,32 +28,32 @@ export default function Profil() {
                     </p>
                 </div>
                 <StackLogos />
-                <Button variant="personal">Téléchargez mon CV</Button>
                 <div className="bg-[#F7F9FF] dark:bg-[#11131F] shadow-md p-4 ml-8 mr-8 rounded-[8px]">
                     <h2 className="text-xl flex mb-2">Certifications:</h2>
-                    <ScrollArea className="h-[200px] rounded-md border">
+                    <ScrollArea className="h-[200px] rounded-md border-[1px] border-white">
                         <Link
                             href="https://nextjs.org/learn/certificate?course=react-foundations&user=64283&certId=react-foundations-64283-1748901888572"
                             target="_blank">
-                            <div className="p-4 border-white border-[1px]">React Foundation for Next.js</div>
+                            <h3 className="p-4 border-white border-[1px]">React Foundation for Next.js</h3>
                         </Link>
                         <Link
                             href="https://nextjs.org/learn/certificate?course=pages-router&user=64283&certId=pages-router-64283-1748902404888"
                             target="_blank">
-                            <div className="p-4 border-white border-[1px]"> Next.js Pages Router Fundamentals</div>
+                            <h3 className="p-4 border-white border-[1px]"> Next.js Pages Router Fundamentals</h3>
                         </Link>
                         <Link
                             href="https://nextjs.org/learn/certificate?course=seo&user=64283&certId=seo-64283-1748902445803"
                             target="_blank">
-                            <div className="p-4 border-white border-[1px]">Next.js SEO Fundamentals</div>
+                            <h3 className="p-4 border-white border-[1px]">Next.js SEO Fundamentals</h3>
                         </Link>
                         <Link
                             href="https://nextjs.org/learn/certificate?course=dashboard-app&user=64283&certId=dashboard-app-64283-1748902472803"
                             target="_blank">
-                            <div className="p-4 border-white border-[1px]">Next.js App Router Fundamentals</div>
+                            <h3 className="p-4 border-white border-[1px]">Next.js App Router Fundamentals</h3>
                         </Link>
                     </ScrollArea>
                 </div>
+                <Button variant="personal">Téléchargez mon CV</Button>
             </div>
         </div>
     </section>

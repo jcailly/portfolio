@@ -47,7 +47,7 @@ export default function StackLogos() {
                     <Link href="https://fr.react.dev/" target="_blank">
                         <Image src="/React_colored_logo.png" width={75} height={75} alt="React logo" className="logo-react p-2"/>
                     </Link>
-                    </TooltipTrigger>
+                </TooltipTrigger>
                 <TooltipContent>
                     <p>React</p>
                 </TooltipContent>
