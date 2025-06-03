@@ -3,6 +3,7 @@ import Link from "next/link.js";
 import { Button } from "@/components/ui/button.jsx";
 import { ScrollArea } from "@/components/ui/scroll-area"
 import StackLogos from "@/components/ui/stack";
+import Footer from "./footer";
 
 export default function Profil() {
     return (

@@ -18,8 +18,6 @@ export default function Home() {
   const slideWidth = () => containerRef.current.clientWidth
   const maxScroll = () => containerRef.current.scrollWidth - slideWidth()+1
 
-
-
   const handlePrev = () => {
     const { scrollLeft } = containerRef.current
     let target = scrollLeft - slideWidth()
@@ -30,7 +28,7 @@ export default function Home() {
   const getPrevTooltipText = () => {
     const { scrollLeft } = containerRef.current
     let targetPrev = scrollLeft - slideWidth()
-    return (targetPrev < slideWidth()-1 && targetPrev > -1) ? "Profil" : "Voir mes projet"
+    return (targetPrev < slideWidth()-1 && targetPrev > -1) ? "Profil" : "Voir mes projets"
   }
 
   const handleNext = () => {
@@ -43,7 +41,7 @@ export default function Home() {
   const getNextTooltipText = () => {
     const { scrollLeft } = containerRef.current
     let targetNext = scrollLeft + slideWidth()
-    return (targetNext > maxScroll()) ? "Profil" : "Voir mes projet"
+    return (targetNext > maxScroll()) ? "Profil" : "Voir mes projets"
   }
 
   const goToProfile = () => {
@@ -52,20 +50,20 @@ export default function Home() {
 
   return (
     <div className="flex flex-col h-screen">
-    <Header goToProfile={() => goToProfile()} />    
-    <div ref={containerRef} className="flex flex-row overflow-x-auto snap-x snap-mandatory scroll-smooth h-screen scrollbar-hide items-center">
-        {/* <Image
-          src="/artistic-blurry-colorful-wallpaper-background.jpg"
-          className="rotate-270 pointer-events-none absolute inset-0 z-0 bg-cover bg-center opacity-20 dark:opacity-20"
-          width={1000}
-          height={500}
-          alt="stylized background"
-          aria-hidden="true"
-        /> */}
+    <Header goToProfile={() => goToProfile()} />
+    <Image
+        src="/artistic-blurry-colorful-wallpaper-background.jpg"
+        className="pointer-events-none h-screen w-screen absolute inset-0 z-0 object-cover opacity-5 dark:opacity-15"
+        width={192}
+        height={108}
+        alt="stylized background"
+        aria-hidden="true"
+    />
+    <div ref={containerRef} className="flex flex-row relative z-10 overflow-x-auto snap-x snap-mandatory scroll-smooth h-screen scrollbar-hide items-center">
       <Profil />
       <Projet_1 />
       <Projet_2 />
-    </div>
+    </div>  
     <Arrow
       handlePrev={() => handlePrev()}
       handleNext={() => handleNext()}

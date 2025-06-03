@@ -16,10 +16,7 @@ export default function Header({ goToProfile }) {
         w-screen flex
         z-50"
           >
-            {/* <Button onClick={goToProfile} text={"Profil"} /> */}
-            <Button variant="personal" onClick={goToProfile}
-            //   text={"Téléchargez mon CV"}
-              >Profil</Button>
+            <Button variant="personal" onClick={goToProfile}>Profil</Button>
             <div className="m-1 flex gap-[10px]">
               <Link href="https://github.com/jcailly?tab=repositories" target="_blank">
                 <Image
