@@ -21,17 +21,17 @@ export default function Profil() {
                             width={180}
                             height={38}
                     />
-                <h1 className="text-2xl text-center">Jeremy Cailly<br />Développeur Full-Stack</h1>
-                <div className="bg-[#F7F9FF] dark:bg-[#11131F] shadow-md w-full p-4 ml-8 mr-8 rounded-[8px]">
+                <h1 className="text-2xl text-center">Jérémy Cailly<br />Développeur Full-Stack</h1>
+                <div className="bg-[#F7F9FF] dark:bg-[#11131F] shadow-sm dark:shadow-[#304384] w-full p-4 ml-8 mr-8 rounded-[8px]">
                     <h2 className="text-xl flex mb-2">A propos de moi:</h2>
                     <p className="text-sm text-justify text-center text-center">
                         Développeur d'applications en reconversion après une carrière de 10 ans dans le secteur automobile premium à Rouen, je mets aujourd’hui mon sens du service, ma rigueur et ma capacité d’adaptation au service de projets numériques. Actuellement en formation à Zone01 Normandie, j’apprends à concevoir et développer des applications web robustes, évolutives et centrées utilisateur, en suivant une pédagogie par projets et en autonomie.
                     </p>
                 </div>
                 <StackLogos />
-                <div className="bg-[#F7F9FF] dark:bg-[#11131F] shadow-md w-full p-4 ml-8 mr-8 rounded-[8px]">
+                <div className="bg-[#F7F9FF] dark:bg-[#11131F] shadow-sm dark:shadow-[#304384] w-full p-4 ml-8 mr-8 rounded-[8px]">
                     <h2 className="text-xl flex mb-2">Certifications:</h2>
-                    <ScrollArea className="h-[200px] rounded-md border-[1px] border-white border-[#ABBDF9] dark:border-[#3A4F97]">
+                    <ScrollArea className="h-[200px] rounded-md border-[1px] border-[#ABBDF9] dark:border-[#3A4F97]">
                         <h3 className="p-4 border-b-[1px] border-b-[#ABBDF9] dark:border-b-[#3A4F97] bg-[#EDF2FE] hover:bg-[#E6E7FF] dark:bg-[#182449] dark:hover:bg-[#1D2E62]">Titre RNCP Concepteur Développeur d'Applications (Obtention Nov 2025)</h3>
                         <Link
                             href="https://nextjs.org/learn/certificate?course=react-foundations&user=64283&certId=react-foundations-64283-1748901888572"
@@ -55,7 +55,15 @@ export default function Profil() {
                         </Link>
                     </ScrollArea>
                 </div>
-                <Button variant="personal">Téléchargez mon CV</Button>
+                <Button variant="personal"
+                        onClick={() => {
+                            const link = document.createElement("a");
+                            link.href = "/CV.pdf";
+                            link.download = "CV_Jeremy_Cailly.pdf";
+                            document.body.appendChild(link);
+                            link.click();
+                            document.body.removeChild(link);
+                        }}>Téléchargez mon CV</Button>
             </div>
         </div>
     </section>
