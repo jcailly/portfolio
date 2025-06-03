@@ -1,101 +1,131 @@
+import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+
 import { Card } from "./card";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
 
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
+const LOGO_MAP = {
+  Golang: {
+    href: "https://go.dev/",
+    src: "/Golang_logo.png",
+    alt: "Golang logo",
+    width: 75,
+    height: 75,
+    tooltip: "Golang",
+    imgClass: "p-2",
+  },
+  Rust: {
+    href: "https://www.rust-lang.org/fr",
+    src: "/Rust_logo.png",
+    alt: "Rust logo",
+    width: 75,
+    height: 75,
+    tooltip: "Rust",
+    imgClass: "p-2",
+  },
+  JavaScript: {
+    href: "https://www.javascript.com/",
+    src: "/Javascript_colored_logo.png",
+    alt: "JavaScript logo",
+    width: 75,
+    height: 75,
+    tooltip: "JavaScript",
+    imgClass: "p-2",
+  },
+  React: {
+    href: "https://fr.react.dev/",
+    src: "/React_colored_logo.png",
+    alt: "React logo",
+    width: 75,
+    height: 75,
+    tooltip: "React",
+    imgClass: "logo-react p-2",
+  },
+  NextJS: {
+    href: "https://nextjs.org/",
+    src: "/next.svg",
+    alt: "Next.js logo",
+    width: 75,
+    height: 75,
+    tooltip: "Next.js",
+    imgClass: "dark:invert p-2",
+  },
+  TailwindCSS: {
+    href: "https://tailwindcss.com/",
+    src: "/Tailwind_colored_logo.png",
+    alt: "TailwindCSS logo",
+    width: 75,
+    height: 75,
+    tooltip: "TailwindCSS",
+    imgClass: "p-2 dark:invert",
+  },
+  SQLite: {
+    href: "https://www.sqlite.org/",
+    src: "/SQLite_logo.png",
+    alt: "SQLite logo",
+    width: 75,
+    height: 75,
+    tooltip: "SQLite",
+    imgClass: "p-2",
+  },
+  Git: {
+    href: "https://git-scm.com/",
+    src: "/Git_icon.svg.png",
+    alt: "Git logo",
+    width: 75,
+    height: 75,
+    tooltip: "Git",
+    imgClass: "p-2",
+  },
+  Bevy: {
+    href: "https://bevyengine.org/",
+    src: "/Bevy_logo.png",
+    alt: "Bevy logo",
+    width: 75,
+    height: 75,
+    tooltip: "Bevy",
+    imgClass: "p-2",
+  }
+};
 
-export default function StackLogos() {
-    return (
-        <TooltipProvider>
-        <Card>
+export default function StackLogos({ items = Object.keys(LOGO_MAP) }) {
+  return (
+    <TooltipProvider>
+      <Card>
         <h2 className="text-xl flex mb-2">Stack:</h2>
-        <div className="items-center justify-center gap-[10px] flex flex-wrap text-sm text-justify text-center text-center">
-            <Tooltip>
+        <div className="flex flex-wrap items-center justify-center gap-2 text-center text-sm">
+          {items.map((key) => {
+            const info = LOGO_MAP[key];
+            if (!info) {
+              return null;
+            }
+            return (
+              <Tooltip key={key}>
                 <TooltipTrigger asChild>
-                    <Link href="https://go.dev/" target="_blank">
-                        <Image src="/Golang_logo.png" width={75} height={75} alt="Golang logo" className="p-2"/>
-                    </Link>
+                  <Link href={info.href} target="_blank" rel="noopener">
+                    <Image
+                      src={info.src}
+                      width={info.width}
+                      height={info.height}
+                      alt={info.alt}
+                      className={info.imgClass}
+                    />
+                  </Link>
                 </TooltipTrigger>
                 <TooltipContent>
-                    <p>Golang</p>
+                  <p>{info.tooltip}</p>
                 </TooltipContent>
-            </Tooltip>
-
-            <Tooltip>
-                <TooltipTrigger asChild>
-                    <Link href="https://www.rust-lang.org/fr" target="_blank">
-                        <Image src="/Rust_logo.png" width={75} height={75} alt="Rust logo" className="p-2"/>
-                    </Link>
-                </TooltipTrigger>
-                <TooltipContent>
-                    <p>Rust</p>
-                </TooltipContent>
-            </Tooltip>
-
-            <Tooltip>
-                <TooltipTrigger asChild>
-                    <Link href="https://www.javascript.com/" target="_blank">
-                        <Image src="/Javascript_colored_logo.png" width={75} height={75} alt="Javascript logo" className="p-2"/>
-                    </Link>
-                </TooltipTrigger>
-                <TooltipContent>
-                    <p>Javascript</p>
-                </TooltipContent>
-            </Tooltip>
-            
-            <Tooltip>
-                <TooltipTrigger asChild>
-                    <Link href="https://fr.react.dev/" target="_blank">
-                        <Image src="/React_colored_logo.png" width={75} height={75} alt="React logo" className="logo-react p-2"/>
-                    </Link>
-                </TooltipTrigger>
-                <TooltipContent>
-                    <p>React</p>
-                </TooltipContent>
-            </Tooltip>
-
-            <Tooltip>
-                <TooltipTrigger asChild>
-                    <Link href="https://nextjs.org/" target="_blank">
-                        <Image src="/next.svg" width={75} height={75} alt="Next.js logo" className="dark:invert p-2"/>
-                    </Link>
-                </TooltipTrigger>
-                <TooltipContent>
-                    <p>NextJS</p>
-                </TooltipContent>
-            </Tooltip>
-            <Tooltip>
-                <TooltipTrigger asChild>
-                    <Link href="https://tailwindcss.com/" target="_blank">
-                        <Image src="/Tailwind_colored_logo.png" width={75} height={75} alt="Tailwindcss logo" className="p-2 dark:invert"/>
-                    </Link>
-                </TooltipTrigger>
-                <TooltipContent>
-                    <p>TailwindCSS</p>
-                </TooltipContent>
-            </Tooltip>
-            <Tooltip>
-                <TooltipTrigger asChild>
-                    <Link href="https://www.sqlite.org/" target="_blank">
-                        <Image src="/SQLite_logo.png" width={100} height={100} alt="SQLite logo" className="p-2"/>
-                    </Link>
-                </TooltipTrigger>
-                <TooltipContent>
-                    <p>SQLite</p>
-                </TooltipContent>
-            </Tooltip>
-            <Tooltip>
-                <TooltipTrigger asChild>
-                    <Link href="https://git-scm.com/" target="_blank">
-                        <Image src="/Git_icon.svg.png" width={75} height={75} alt="Git logo" className="p-2"/>
-                    </Link>
-                </TooltipTrigger>
-                <TooltipContent>
-                    <p>Git</p>
-                </TooltipContent>
-            </Tooltip>
+              </Tooltip>
+            );
+          })}
         </div>
-        </Card>
-        </TooltipProvider>
-    )
+      </Card>
+    </TooltipProvider>
+  );
 }

@@ -1,7 +1,12 @@
-import Image from "next/image";
+import Link from "next/link";
 import { Card } from "@/components/ui/card";
 
+import StackLogos from "@/components/ui/stack";
+
 export default function Projet_1() {
+
+  const stackForThisProject = ["Rust", "Bevy", "Git"];
+
     return (
     <section className="items-center justify-center
         snap-start pt-[100px] pb-[60px]
@@ -12,15 +17,29 @@ export default function Projet_1() {
         <div className="max-w-[800px] w-full flex flex-col gap-[32px] row-start-2 items-center justify-center">
         <h2 className="text-2xl text-center">Multiplayer-fps</h2>
       <Card>
-
+        <h2 className="text-xl flex mb-2">Description:</h2>
+        <div className="text-sm text-justify text-center text-center">
+          <p>Développement d’un jeu inspiré de Maze Wars en Rust, intégrant :<br /><br />
+          - Interface utilisateur : Création d'un joueur avec un équipement, une map, minimap montrant
+          la position du joueur et l’ensemble du niveau, et affichage en temps réel du taux de rafraîchissement
+          (FPS).<br /><br />
+          - Architecture client‐serveur TCP : serveur central capable d’accueillir plusieurs connexions,
+          exécution possible sur la même machine que le client ou depuis d’autres postes. Le client, écrit en
+          Rust, demande l’adresse IP du serveur et un pseudonyme avant d’ouvrir l’interface graphique et de
+          lancer la partie.<br /><br />
+          - Performance garantissant 50 FPS minimum : optimisation du rendu et de la boucle de jeu pour maintenir
+          un taux de rafraîchissement élevé, assurant une expérience fluide en réseau.<br /><br />
+          Ce projet démontre la maîtrise de la programmation réseau (TCP), la conception d’interfaces graphiques
+          en temps réel et l’optimisation des performances dans un contexte multijoueur.</p>
+        </div>
       </Card>
-      <Card>
 
-      </Card>
-      <div className="w-full max-w-3xl mx-auto my-8">
+      <StackLogos items={stackForThisProject}/>
+      <div className="w-full">
+        
       <video
         controls
-        className="w-full rounded-2xl shadow-lg"
+        className="w-full rounded-2xl shadow-sm dark:shadow-[#304384]"
         // If your file is public/example.mp4, point to "/example.mp4"
         src="/Multiplayer_fps_present.mp4"
       >
@@ -28,9 +47,13 @@ export default function Projet_1() {
         Your browser doesn’t support the video tag.
       </video>
     </div>
-          <Card>
-
-      </Card>
+    <Card>
+      <Link href="https://zone01normandie.org/git/slecureu/multiplayer-fps/src/branch/main/src" target="_blank">
+      <div className="text-sm text-justify text-center text-center">
+        <p>Repo Github</p>
+      </div>
+      </Link>
+    </Card>
     </div>
     </div>
  
