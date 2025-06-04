@@ -42,7 +42,7 @@ export default function Projet_2() {
 
           </Card>
           <Card>
-            <Link href="https://zone01normandie.org/git/slecureu/multiplayer-fps/src/branch/main/src" target="_blank">
+            <Link href="https://github.com/jcailly/social-network" target="_blank">
               <div className="text-sm text-justify text-center text-center">
                 <p>Repo Github</p>
               </div>
