@@ -48,7 +48,7 @@ export default function Projet_1() {
       </video>
     </div>
     <Card>
-      <Link href="https://zone01normandie.org/git/slecureu/multiplayer-fps/src/branch/main/src" target="_blank">
+      <Link href="https://github.com/jcailly/multiplayer-fps" target="_blank">
       <div className="text-sm text-justify text-center text-center">
         <p>Repo Github</p>
       </div>
