@@ -91,6 +91,15 @@ const LOGO_MAP = {
     height: 75,
     tooltip: "Bevy",
     imgClass: "p-2",
+  },
+  Docker: {
+    href: "https://www.docker.com/",
+    src: "/Docker_logo.png",
+    alt: "Docker logo",
+    width: 75,
+    height: 75,
+    tooltip: "Docker",
+    imgClass: "p-2",
   }
 };
 
