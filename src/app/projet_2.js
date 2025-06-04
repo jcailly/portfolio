@@ -13,7 +13,8 @@ import {
 
 export default function Projet_2() {
   const stackForThisProject = ["JavaScript", "React", "NextJS", "TailwindCSS", "Golang", "SQLite", "Git", "Docker"]
-    return (
+
+  return (
     <section className="items-center justify-center
         snap-start pt-[100px] pb-[60px]
         flex-none flex-auto
@@ -53,7 +54,7 @@ export default function Projet_2() {
                 <CarouselItem>
                   <Image
                     src="/SN_Login.png"
-                    alt="Social Natwork Login Page"
+                    alt="Social Network Login Page"
                     width={1900}
                     height={900}
                   />
@@ -61,7 +62,7 @@ export default function Projet_2() {
                 <CarouselItem>
                   <Image
                     src="/SN_Register.png"
-                    alt="Social Natwork Login Page"
+                    alt="Social Network Register Page"
                     width={1900}
                     height={900}
                   />
@@ -69,7 +70,7 @@ export default function Projet_2() {
                 <CarouselItem>
                   <Image
                     src="/SN_Profil.png"
-                    alt="Social Natwork Login Page"
+                    alt="Social Network Profil Page"
                     width={1900}
                     height={900}
                   />
@@ -77,7 +78,7 @@ export default function Projet_2() {
                 <CarouselItem>
                   <Image
                     src="/SN_Home1.png"
-                    alt="Social Natwork Login Page"
+                    alt="Social Natwork Home Page"
                     width={1900}
                     height={900}
                   />
@@ -85,7 +86,7 @@ export default function Projet_2() {
                 <CarouselItem>
                   <Image
                     src="/SN_Home2.png"
-                    alt="Social Natwork Login Page"
+                    alt="Social Network Home Page"
                     width={1900}
                     height={900}
                   />
@@ -93,7 +94,7 @@ export default function Projet_2() {
                 <CarouselItem>
                   <Image
                     src="/SN_Chat.png"
-                    alt="Social Natwork Login Page"
+                    alt="Social Network Chat Page"
                     width={1900}
                     height={900}
                   />
