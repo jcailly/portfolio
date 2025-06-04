@@ -1,6 +1,15 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Card } from "@/components/ui/card";
 import StackLogos from "@/components/ui/stack";
+
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel"
 
 export default function Projet_2() {
   const stackForThisProject = ["JavaScript", "React", "NextJS", "TailwindCSS", "Golang", "SQLite", "Git", "Docker"]
@@ -39,7 +48,60 @@ export default function Projet_2() {
 
           <StackLogos items={stackForThisProject}/>
           <Card>
-
+            <Carousel>
+              <CarouselContent>
+                <CarouselItem>
+                  <Image
+                    src="/SN_Login.png"
+                    alt="Social Natwork Login Page"
+                    width={1900}
+                    height={900}
+                  />
+                </CarouselItem>
+                <CarouselItem>
+                  <Image
+                    src="/SN_Register.png"
+                    alt="Social Natwork Login Page"
+                    width={1900}
+                    height={900}
+                  />
+                </CarouselItem>
+                <CarouselItem>
+                  <Image
+                    src="/SN_Profil.png"
+                    alt="Social Natwork Login Page"
+                    width={1900}
+                    height={900}
+                  />
+                </CarouselItem>
+                <CarouselItem>
+                  <Image
+                    src="/SN_Home1.png"
+                    alt="Social Natwork Login Page"
+                    width={1900}
+                    height={900}
+                  />
+                </CarouselItem>
+                <CarouselItem>
+                  <Image
+                    src="/SN_Home2.png"
+                    alt="Social Natwork Login Page"
+                    width={1900}
+                    height={900}
+                  />
+                </CarouselItem>
+                <CarouselItem>
+                  <Image
+                    src="/SN_Chat.png"
+                    alt="Social Natwork Login Page"
+                    width={1900}
+                    height={900}
+                  />
+                </CarouselItem>
+              </CarouselContent>
+            <CarouselPrevious />
+            <CarouselNext />
+          </Carousel>
           </Card>
           <Card>
             <Link href="https://github.com/jcailly/social-network" target="_blank">
