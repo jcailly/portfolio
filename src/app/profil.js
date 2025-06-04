@@ -16,8 +16,8 @@ export default function Profil() {
             <div className="flex justify-center p-4">
                 <div className="max-w-[800px] w-full flex flex-col gap-[32px] row-start-2 items-center justify-center">
                     <Image 
-                        className="rounded-full"
-                            src="/profil.jpg"
+                        className="rounded-full shadow-sm dark:shadow-[#304384]"
+                            src="/PP.jpg"
                             alt="profil photo"
                             width={180}
                             height={38}

@@ -1,11 +1,33 @@
-// import { useRef } from 'react';
+'use client';
+import { useState, useEffect } from "react";
+import { SunIcon, MoonIcon } from "lucide-react";
+import { useTheme } from "next-themes";
+
 import Image from "next/image";
-import { Button } from "@/components/ui/button.jsx"
 import Link from "next/link.js";
+
+import { Switch } from "@/components/ui/switch";
+import { Button } from "@/components/ui/button.jsx"
+
+
 
 
 export default function Header({ goToProfile }) {
 
+  const { theme, setTheme } = useTheme();
+
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    return null;
+  }
+
+  const handleToggle = (checked) => {
+    setTheme(checked ? "dark" : "light");
+  };
 
     return (
         <header className="p-2
@@ -15,8 +37,24 @@ export default function Header({ goToProfile }) {
         items-center justify-between
         w-screen flex
         z-50"
-          >
+          > <div className="flex items-center">
             <Button variant="personal" onClick={goToProfile}>Profil</Button>
+            <div className="flex items-center space-x-2">
+              {theme === "dark" ? (
+                <MoonIcon className="w-5 h-5 text-yellow-400" />
+              ) : (
+                <SunIcon className="w-5 h-5 text-yellow-500" />
+              )}
+
+              <Switch
+               checked={theme === "dark"}
+                onCheckedChange={handleToggle}
+                aria-label="Toggle Dark Mode"
+                className="bg-gray-200 dark:bg-gray-600"
+              />
+            </div>
+
+            </div>
             <div className="m-1 flex gap-[10px]">
               <Link href="https://github.com/jcailly?tab=repositories" target="_blank">
                 <Image
