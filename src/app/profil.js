@@ -9,7 +9,7 @@ import Footer from "./footer";
 export default function Profil() {
     return (
     <section className="items-center justify-center
-        snap-start pt-[100px]
+        snap-start pt-[60px]
         flex-none flex-auto
         w-screen h-screen
         overflow-auto scrollbar-hide">
@@ -22,11 +22,11 @@ export default function Profil() {
                             width={180}
                             height={38}
                     />
-                <h1 className="text-2xl text-center">Jérémy Cailly<br />Développeur Full-Stack</h1>
+                <h1 className="text-2xl text-center font-black">Jérémy Cailly<br />Développeur Full-Stack</h1>
 
                 <Card>
-                    <h2 className="text-xl flex mb-2">A propos de moi:</h2>
-                    <div className="text-sm text-justify text-center text-center">
+                    <h2 className="text-xl flex mb-2 font-bold">A propos de moi:</h2>
+                    <div className="text-sm text-justify text-center text-center font-extralight">
                         <p>Développeur d'applications en reconversion après une carrière de 10 ans dans le secteur
                             automobile premium à Rouen, je mets aujourd’hui mon sens du service, ma rigueur et ma
                             capacité d’adaptation au service de projets numériques. Actuellement en formation à Zone01
@@ -45,8 +45,8 @@ export default function Profil() {
                 <StackLogos />
 
                 <Card>
-                    <h2 className="text-xl flex mb-2">Certifications:</h2>
-                    <ScrollArea className="h-[200px] rounded-md border-[1px] border-[#ABBDF9] dark:border-[#3A4F97]">
+                    <h2 className="text-xl flex mb-2 font-bold">Certifications:</h2>
+                    <ScrollArea className="h-[250px] rounded-md border-[1px] border-[#ABBDF9] dark:border-[#3A4F97]">
                         <h3 className="p-4 border-b-[1px] border-b-[#ABBDF9] dark:border-b-[#3A4F97] bg-[#EDF2FE] hover:bg-[#E6E7FF] dark:bg-[#182449] dark:hover:bg-[#1D2E62]">Titre RNCP Concepteur Développeur d'Applications (Obtention Nov 2025)</h3>
                         <Link
                             href="https://nextjs.org/learn/certificate?course=react-foundations&user=64283&certId=react-foundations-64283-1748901888572"
@@ -70,10 +70,8 @@ export default function Profil() {
                         </Link>
                     </ScrollArea>
                 </Card>
-
             </div>
         </div>
-        <Footer className=""/>
     </section>
     )
 }

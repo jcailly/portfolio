@@ -107,7 +107,7 @@ export default function StackLogos({ items = Object.keys(LOGO_MAP) }) {
   return (
     <TooltipProvider>
       <Card>
-        <h2 className="text-xl flex mb-2">Stack:</h2>
+        <h2 className="text-xl flex mb-2 font-bold">Stack:</h2>
         <div className="flex flex-wrap items-center justify-center gap-2 text-center text-sm">
           {items.map((key) => {
             const info = LOGO_MAP[key];
@@ -117,7 +117,7 @@ export default function StackLogos({ items = Object.keys(LOGO_MAP) }) {
             return (
               <Tooltip key={key}>
                 <TooltipTrigger asChild>
-                  <Link href={info.href} target="_blank" rel="noopener">
+                  <Link href={info.href} target="_blank" rel="noopener" className="p-2 hover:shadow-md hover:ring-[1px] ring-[#304384] dark:hover:shadow-[#304384] rounded-full">
                     <Image
                       src={info.src}
                       width={info.width}

@@ -10,16 +10,27 @@ export default function Projet_1() {
 
     return (
     <section className="items-center justify-center
-        snap-start pt-[100px]
+        snap-start pt-[60px]
         flex-none flex-auto
         w-screen h-screen
         overflow-auto scrollbar-hide">
       <div className="flex justify-center p-4">
         <div className="max-w-[800px] w-full flex flex-col gap-[32px] row-start-2 items-center justify-center">
-        <h2 className="text-2xl text-center">Multiplayer-fps</h2>
+      <div className="w-full">
+        <h2 className="text-2xl text-center m-4 font-black">Projet<br />Multiplayer-fps</h2>      
+      <video
+        controls
+        className="w-full rounded-2xl shadow-sm dark:shadow-[#304384]"
+        // If your file is public/example.mp4, point to "/example.mp4"
+        src="/Multiplayer_fps_present.mp4"
+      >
+        {/* Fallback text for browsers that don't support <video> */}
+        Your browser doesn’t support the video tag.
+      </video>
+    </div>
       <Card>
-        <h2 className="text-xl flex mb-2">Description:</h2>
-        <div className="text-sm text-justify text-center text-center">
+        <h2 className="text-xl flex mb-2 font-bold">Description:</h2>
+        <div className="text-sm text-justify text-center text-center font-extralight">
           <p>Développement d’un jeu inspiré de Maze Wars en Rust, intégrant :<br /><br />
           - Interface utilisateur : Création d'un joueur avec un équipement, une map, minimap montrant
           la position du joueur et l’ensemble du niveau, et affichage en temps réel du taux de rafraîchissement
@@ -36,18 +47,7 @@ export default function Projet_1() {
       </Card>
 
       <StackLogos items={stackForThisProject}/>
-      <div className="w-full">
-        
-      <video
-        controls
-        className="w-full rounded-2xl shadow-sm dark:shadow-[#304384]"
-        // If your file is public/example.mp4, point to "/example.mp4"
-        src="/Multiplayer_fps_present.mp4"
-      >
-        {/* Fallback text for browsers that don't support <video> */}
-        Your browser doesn’t support the video tag.
-      </video>
-    </div>
+
     <Card>
       <Link href="https://github.com/jcailly/multiplayer-fps" target="_blank">
       <div className="text-sm text-justify text-center text-center">
@@ -57,7 +57,6 @@ export default function Projet_1() {
     </Card>
     </div>
     </div>
-    <Footer className=""/>
     </section>
     )
 }
