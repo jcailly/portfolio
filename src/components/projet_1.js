@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { Card } from "@/components/ui/card";
-import Footer from "./footer";
 
 import StackLogos from "@/components/ui/stack";
 
@@ -21,10 +20,8 @@ export default function Projet_1() {
       <video
         controls
         className="w-full rounded-2xl shadow-sm dark:shadow-[#304384]"
-        // If your file is public/example.mp4, point to "/example.mp4"
         src="/Multiplayer_fps_present.mp4"
       >
-        {/* Fallback text for browsers that don't support <video> */}
         Your browser doesn’t support the video tag.
       </video>
     </div>

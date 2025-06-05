@@ -2,7 +2,6 @@ import Link from "next/link";
 import Image from "next/image";
 import { Card } from "@/components/ui/card";
 import StackLogos from "@/components/ui/stack";
-import Footer from "./footer";
 
 import {
   Carousel,
@@ -24,7 +23,6 @@ export default function Projet_2() {
           <div className="flex justify-center p-4">
             <div className="max-w-[800px] w-full flex flex-col gap-[32px] row-start-2 items-center justify-center">
             <h2 className="text-2xl text-center m-4 font-black">Projet<br />Social Network</h2>
-          {/* <Card> */}
             <Carousel>
               <CarouselContent>
                 <CarouselItem>
@@ -79,7 +77,6 @@ export default function Projet_2() {
             <CarouselPrevious />
             <CarouselNext />
           </Carousel>
-          {/* </Card> */}
           <Card>
             <h2 className="text-xl flex mb-2 font-bold">Description:</h2>
             <div className="text-sm text-justify text-center text-center font-light">

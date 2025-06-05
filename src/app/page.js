@@ -3,11 +3,10 @@
 import { useRef, useState } from 'react'
 
 import Image from "next/image";
-import Header from "./header.js";
-import Footer from './footer.js';
-import Profil from "./profil.js";
-import Projet_1 from "./projet_1.js";
-import Projet_2 from "./projet_2.js";
+import Header from "../components/ui/header.js";
+import Profil from "../components/profil.js";
+import Projet_1 from "../components/projet_1.js";
+import Projet_2 from "../components/projet_2.js";
 import Arrow from '@/components/ui/arrow.js';
 
 export default function Home() {

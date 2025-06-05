@@ -4,7 +4,6 @@ import { Button } from "@/components/ui/button.jsx";
 import { ScrollArea } from "@/components/ui/scroll-area"
 import StackLogos from "@/components/ui/stack";
 import { Card } from "@/components/ui/card";
-import Footer from "./footer";
 
 export default function Profil() {
     return (
