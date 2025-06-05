@@ -4,7 +4,6 @@ import { useRef, useState } from 'react'
 
 import Image from "next/image";
 import Header from "./header.js";
-import Footer from "./footer.js";
 import Profil from "./profil.js";
 import Projet_1 from "./projet_1.js";
 import Projet_2 from "./projet_2.js";
@@ -72,7 +71,6 @@ export default function Home() {
       setTooltipText={setTooltipText}
       tooltipText={tooltipText}
     />
-    <Footer className=""/>
     </div>
   );
 }

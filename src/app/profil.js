@@ -9,7 +9,7 @@ import Footer from "./footer";
 export default function Profil() {
     return (
     <section className="items-center justify-center
-        snap-start pt-[100px] pb-[60px]
+        snap-start pt-[100px]
         flex-none flex-auto
         w-screen h-screen
         overflow-auto scrollbar-hide">
@@ -73,6 +73,7 @@ export default function Profil() {
 
             </div>
         </div>
+        <Footer className=""/>
     </section>
     )
 }

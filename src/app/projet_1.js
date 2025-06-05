@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Card } from "@/components/ui/card";
+import Footer from "./footer";
 
 import StackLogos from "@/components/ui/stack";
 
@@ -9,7 +10,7 @@ export default function Projet_1() {
 
     return (
     <section className="items-center justify-center
-        snap-start pt-[100px] pb-[60px]
+        snap-start pt-[100px]
         flex-none flex-auto
         w-screen h-screen
         overflow-auto scrollbar-hide">
@@ -56,7 +57,7 @@ export default function Projet_1() {
     </Card>
     </div>
     </div>
- 
+    <Footer className=""/>
     </section>
     )
 }

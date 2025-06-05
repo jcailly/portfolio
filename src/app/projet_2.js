@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Card } from "@/components/ui/card";
 import StackLogos from "@/components/ui/stack";
+import Footer from "./footer";
 
 import {
   Carousel,
@@ -16,7 +17,7 @@ export default function Projet_2() {
 
   return (
     <section className="items-center justify-center
-        snap-start pt-[100px] pb-[60px]
+        snap-start pt-[100px]
         flex-none flex-auto
         w-screen h-screen
         overflow-auto scrollbar-hide">
@@ -113,6 +114,7 @@ export default function Projet_2() {
           </Card>
         </div>
       </div>
+      <Footer className=""/>
     </section>
     )
 }
