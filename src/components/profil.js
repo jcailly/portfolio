@@ -31,7 +31,7 @@ export default function Profil() {
                             capacité d’adaptation au service de projets numériques. Actuellement en formation à Zone01
                             Normandie, j’apprends à concevoir et développer des applications web robustes, évolutives
                             et centrées utilisateur, en suivant une pédagogie par projets et en autonomie.</p>
-                            <div className="flex justify-center">
+                            <div className="flex justify-center m-4">
                             <a href="/CV.pdf" target="_blank" rel="noopener noreferrer">
                                 <Button variant="personal">
                                     Téléchargez mon CV
