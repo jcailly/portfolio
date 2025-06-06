@@ -19,7 +19,7 @@ export default function Profil() {
                             src="/PP.jpg"
                             alt="profil photo"
                             width={180}
-                            height={38}
+                            height={180}
                     />
                 <h1 className="text-2xl text-center font-black">Jérémy Cailly<br />Développeur Full-Stack</h1>
 
