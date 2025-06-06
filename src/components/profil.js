@@ -32,11 +32,11 @@ export default function Profil() {
                             Normandie, j’apprends à concevoir et développer des applications web robustes, évolutives
                             et centrées utilisateur, en suivant une pédagogie par projets et en autonomie.</p>
                             <div className="flex justify-center">
-                            <Link href="/CV.pdf" target="_blank">
+                            <a href="/CV.pdf" target="_blank" rel="noopener noreferrer">
                                 <Button variant="personal">
                                     Téléchargez mon CV
                                 </Button>
-                            </Link>
+                            </a>
                             </div>
                     </div>
                 </Card>
