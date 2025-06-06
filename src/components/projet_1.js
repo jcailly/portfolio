@@ -16,12 +16,19 @@ export default function Projet_1() {
       <div className="flex justify-center p-4">
         <div className="max-w-[800px] w-full flex flex-col gap-[32px] row-start-2 items-center justify-center">
       <div className="w-full">
-        <h2 className="text-2xl text-center m-4 font-black">Projet<br />Multiplayer-fps</h2>      
+        <h2 className="text-2xl text-center m-4 font-black">Projet<br />Multiplayer-fps</h2>   
       <video
         controls
         className="w-full rounded-2xl shadow-sm dark:shadow-[#304384]"
         src="/Multiplayer_fps_present.mp4"
       >
+        <track
+          kind="captions"
+          src="/Multiplayer_fps_present.fr.vtt"
+          srcLang="fr"
+          label="French captions"
+          default
+        />
         Your browser doesn’t support the video tag.
       </video>
     </div>

@@ -1,0 +1,103 @@
+WEBVTT
+
+00:00:00.725 --> 00:00:03.500
+Bonjour, je m’appelle Jérémy CAILLY
+
+00:00:03.500 --> 00:00:06.500
+et je suis en formation pour devenir développeur full-stack.
+
+00:00:07.000 --> 00:00:09.000
+Dans cette vidéo, je vous présente un projet
+
+00:00:09.000 --> 00:00:11.250
+que j’ai réalisé pendant ma formation :
+
+00:00:11.500 --> 00:00:15.000
+un jeu multijoueur en réseau local inspiré de Maze Wars.
+
+00:00:16.000 --> 00:00:19.500
+Ici, vous voyez l’architecture globale dans VS Code :
+
+00:00:19.650 --> 00:00:23.100
+un serveur et des clients en Rust, communiquant via TCP.
+
+00:00:23.500 --> 00:00:26.000
+L’interface graphique est gérée par Bevy Engine.
+
+00:00:26.900 --> 00:00:28.900
+J’ai tout hébergé sur GitHub, vous trouverez le lien
+
+00:00:28.900 --> 00:00:30.850
+sous cette vidéo pour explorer le code.
+
+00:00:34.250 --> 00:00:37.250
+Au lancement, le client saisit l’adresse IP,
+
+00:00:37.250 --> 00:00:39.450
+le port et un pseudo,
+
+00:00:39.500 --> 00:00:42.400
+puis il peut créer ou rejoindre un serveur.
+
+00:00:46.500 --> 00:00:49.000
+Le jeu ouvre alors son interface :
+
+00:00:49.000 --> 00:00:51.300
+on aperçoit un labyrinthe en 3D,
+
+00:00:51.300 --> 00:00:53.750
+avec une mini-carte indiquant notre position.
+
+00:00:55.100 --> 00:00:57.900
+Les données du labyrinthe proviennent d’un fichier JSON.
+
+00:00:58.250 --> 00:01:01.800
+En haut à droite, le framerate s’affiche en temps réel :
+
+00:01:02.250 --> 00:01:04.800
+l’objectif est de rester au-dessus de 50 FPS.
+
+00:01:08.000 --> 00:01:09.250
+Pour la démonstration, 
+
+00:01:09.500 --> 00:01:13.000
+mon collègue se connecte depuis une autre machine sur le même réseau.
+
+00:01:14.000 --> 00:01:16.750
+Vous pouvez voir qu’il apparaît directement dans le labyrinthe
+
+00:01:17.000 --> 00:01:19.450
+on peut alors interagir en temps réel,
+
+00:01:19.500 --> 00:01:21.400
+tirer des projectiles, etc.
+
+00:01:21.850 --> 00:01:24.150
+Tout reste fluide, même lorsqu’on joue
+
+00:01:24.150 --> 00:01:26.250
+à deux sur notre réseau local.
+
+00:01:38.000 --> 00:01:40.750
+Ce projet m’a permis de mieux comprendre la logique réseau,
+
+00:01:41.250 --> 00:01:43.250
+la gestion d’événements en temps réel
+
+00:01:43.500 --> 00:01:45.750
+et l’importance de maintenir un bon framerate.
+
+00:01:46.700 --> 00:01:48.100
+Je suis encore en apprentissage,
+
+00:01:48.100 --> 00:01:49.750
+mais je suis fier du résultat.
+
+00:01:50.750 --> 00:01:52.500
+Merci d’avoir regardé !
+
+00:01:52.500 --> 00:01:54.500
+N’hésitez pas à consulter le dépôt GitHub
+
+00:01:54.500 --> 00:01:56.250
+pour explorer le code en détail.
