@@ -7,6 +7,7 @@ import Head from "next/head";
 export const metadata = {
   title: "Jeremy Cailly | Développeur Full-Stack | Rouen, France",
   description: "Jeremy Cailly est un développeur Full-Stack (React, Tailwind, Next.js) basé à Rouen. Découvrez mes projets, mon parcours et contactez-moi.",
+  verification: "ytLRCRiRszDUdQ807b6241iFKRSqGGvMmOspahx6-zo"
 };
 
 export default function RootLayout({ children }) {
