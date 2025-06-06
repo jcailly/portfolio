@@ -2,6 +2,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider"
 import { geistSans, geistMono } from '@/app/ui/fonts';
 import Footer from "../components/ui/footer";
+import Head from "next/head";
 
 export const metadata = {
   title: "Jeremy Cailly | Développeur Full-Stack | Rouen, France",
@@ -14,6 +15,9 @@ export default function RootLayout({ children }) {
       className={`${geistSans.variable} ${geistMono.variable} antialiased h-full`}
       suppressHydrationWarning
       >
+      <Head>
+        <meta name="google-site-verification" content="ytLRCRiRszDUdQ807b6241iFKRSqGGvMmOspahx6-zo" />
+      </Head>
       <body className="bg-[#FDFDFE] dark:bg-[#141726] font-[family-name:var(--font-geist-mono)]">
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false} className="flex-grow">
             {children}

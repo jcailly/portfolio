@@ -26,13 +26,13 @@ export default function Profil() {
                 <Card>
                     <h2 className="text-xl flex mb-2 font-bold">A propos de moi:</h2>
                     <div className="text-sm text-justify text-center text-center font-extralight">
-                        <p>Développeur d'applications en reconversion après une carrière de 10 ans dans le secteur
+                        <p>Développeur Full-stack en reconversion après une carrière de 10 ans dans le secteur
                             automobile premium à Rouen, je mets aujourd’hui mon sens du service, ma rigueur et ma
                             capacité d’adaptation au service de projets numériques. Actuellement en formation à Zone01
                             Normandie, j’apprends à concevoir et développer des applications web robustes, évolutives
                             et centrées utilisateur, en suivant une pédagogie par projets et en autonomie.</p>
                             {/* <div className="flex justify-center m-4 p-4"> */}
-                            <a href="/CV.pdf" target="_blank" rel="noopener noreferrer" className="flex justify-center">
+                            <a href="/Jeremy_CAILLY_CV.pdf" target="_blank" rel="noopener noreferrer" className="flex justify-center">
                                 <Button variant="personal" >
                                     Téléchargez mon CV
                                 </Button>
