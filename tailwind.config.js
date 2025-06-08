@@ -4,7 +4,9 @@
 export default {
   darkMode: "class",
   content: [
-    './src/app/**/*.{js,ts}',         // <-- correct path
+    './src/app/**/*.{js,jsx,ts,tsx}',
+    './src/components/**/*.{js,jsx,ts,tsx}',
+    './src/lib/**/*.{js,jsx,ts,tsx}'
   ],
   theme: {
     extend: {

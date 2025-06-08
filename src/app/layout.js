@@ -2,7 +2,9 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider"
 import { geistSans, geistMono } from '@/app/ui/fonts';
 import Footer from "../components/ui/footer";
-import Head from "next/head";
+import DeferredLink from "@/components/defered_link";
+
+
 
 export const metadata = {
   title: "Jeremy Cailly | Développeur Full-Stack | Rouen, France",
@@ -18,7 +20,13 @@ export default function RootLayout({ children }) {
       className={`${geistSans.variable} ${geistMono.variable} antialiased h-full`}
       suppressHydrationWarning
       >
+      <head>
+        
+
+      </head>
       <body className="bg-[#FDFDFE] dark:bg-[#141726] font-[family-name:var(--font-geist-mono)]">
+          <DeferredLink href="/react-animation.css" />
+        
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false} className="flex-grow">
             {children}
         </ThemeProvider>

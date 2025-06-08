@@ -29,8 +29,8 @@ export default function Projet_2() {
                   <Image
                     src="/SN_Login.png"
                     alt="Social Network Login Page"
-                    width={1900}
-                    height={1000}
+                    width={800}
+                    height={404}
                   />
                 </CarouselItem>
                 <CarouselItem>
