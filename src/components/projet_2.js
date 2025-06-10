@@ -23,54 +23,60 @@ export default function Projet_2() {
           <div className="flex justify-center p-4">
             <div className="max-w-[800px] w-full flex flex-col gap-[32px] row-start-2 items-center justify-center">
             <h2 className="text-2xl text-center m-4 font-black">Projet<br />Social Network</h2>
-            <Carousel>
+            <Carousel >
               <CarouselContent>
                 <CarouselItem>
                   <Image
                     src="/SN_Login.png"
                     alt="Social Network Login Page"
-                    width={800}
-                    height={404}
+                    width={1600}
+                    height={808}
+                    sizes="(max-width: 768px) 100vw, 800px"
                   />
                 </CarouselItem>
                 <CarouselItem>
                   <Image
                     src="/SN_Register.png"
                     alt="Social Network Register Page"
-                    width={1900}
-                    height={1000}
+                    width={1600}
+                    height={808}
+                    sizes="(max-width: 768px) 100vw, 800px"
                   />
                 </CarouselItem>
                 <CarouselItem>
                   <Image
                     src="/SN_Profil.png"
                     alt="Social Network Profil Page"
-                    width={1900}
-                    height={1000}
+                    width={1600}
+                    height={808}
+                    sizes="(max-width: 768px) 100vw, 800px"
                   />
                 </CarouselItem>
                 <CarouselItem>
                   <Image
                     src="/SN_Home1.png"
                     alt="Social Natwork Home Page"
-                    width={1900}
-                    height={1000}
+                    width={1600}
+                    height={808}
+                    sizes="(max-width: 768px) 100vw, 800px"
                   />
                 </CarouselItem>
                 <CarouselItem>
                   <Image
                     src="/SN_Home2.png"
                     alt="Social Network Home Page"
-                    width={1900}
-                    height={1000}
+                    width={1600}
+                    height={808}
+                    sizes="(max-width: 768px) 100vw, 800px"
                   />
                 </CarouselItem>
                 <CarouselItem>
                   <Image
                     src="/SN_Chat.png"
                     alt="Social Network Chat Page"
-                    width={1900}
-                    height={1000}
+                    width={1600}
+                    height={808}
+                    sizes="(max-width: 768px) 100vw, 800px"
                   />
                 </CarouselItem>
               </CarouselContent>
