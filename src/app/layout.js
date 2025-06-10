@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
 
       </head>
       <body className="bg-[#FDFDFE] dark:bg-[#141726] font-[family-name:var(--font-geist-mono)]">
-          <DeferredLink href="/react-animation.css" />
+          <DeferredLink href="/defered_styles.css" />
         
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false} className="flex-grow">
             {children}
