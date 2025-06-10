@@ -3,11 +3,17 @@
 import { useRef, useState } from 'react'
 
 import Image from "next/image";
+import dynamic from 'next/dynamic';
+
 import Header from "../components/ui/header.js";
 import Profil from "../components/profil.js";
-import Projet_1 from "../components/projet_1.js";
-import Projet_2 from "../components/projet_2.js";
+// import Projet_1 from "../components/projet_1.js";
+// import Projet_2 from "../components/projet_2.js";
 import Arrow from '@/components/ui/arrow.js';
+
+const Projet_1 = dynamic(() => import("../components/projet_1.js"))
+
+const Projet_2 = dynamic(() => import("../components/projet_2.js"))
 
 export default function Home() {
   let [tooltipText, setTooltipText] = useState("")
