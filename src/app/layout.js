@@ -21,8 +21,28 @@ export default function RootLayout({ children }) {
       suppressHydrationWarning
       >
       <head>
-        
-
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Person",
+              "name": "Jérémy Cailly",
+              "jobTitle": "Développeur Full Stack",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Rouen",
+                "addressRegion": "Normandie",
+                "addressCountry": "France"
+              },
+              "url": "https://portfolio-jeremy-caillys-projects.vercel.app/",
+              "sameAs": [
+                "https://www.linkedin.com/in/j%C3%A9r%C3%A9my-cailly-605792155/",
+                "https://github.com/jcailly"
+              ]
+            })
+          }}
+        />
       </head>
       <body className="bg-[#FDFDFE] dark:bg-[#141726] font-[family-name:var(--font-geist-mono)]">
           <DeferredLink href="/defered_styles.css" />
