@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link.js";
-import dynamic from "next/dynamic";
 import { Button } from "@/components/ui/button.jsx";
 import { ScrollArea } from "@/components/ui/scroll-area"
 import StackLogos from "@/components/ui/stack";
@@ -22,7 +21,7 @@ export default function Profil() {
                             width={180}
                             height={180}
                     />
-                <h1 className="text-2xl text-center font-black">Jérémy Cailly<br />Développeur Full-Stack</h1>
+                <h1 className="text-2xl text-center font-black">Jérémy Cailly<br />Développeur Full-Stack<br />Rouen, Normandie</h1>
 
                 <Card>
                     <h2 className="text-xl flex mb-2 font-bold">A propos de moi:</h2>

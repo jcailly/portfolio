@@ -7,7 +7,7 @@ import DeferredLink from "@/components/defered_link";
 
 
 export const metadata = {
-  title: "Jeremy Cailly | Développeur Full-Stack | Rouen, France",
+  title: "Jeremy Cailly | Développeur Full-Stack | Rouen, Normandie",
   description: "Jeremy Cailly est un développeur Full-Stack (React, Tailwind, Next.js) basé à Rouen. Découvrez mes projets, mon parcours et contactez-moi.",
   verification: {
     google: "ytLRCRiRszDUdQ807b6241iFKRSqGGvMmOspahx6-zo",
