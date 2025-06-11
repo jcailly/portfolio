@@ -8,7 +8,8 @@ export default function Arrow({
     getPrevTooltipText,
     getNextTooltipText,
     setTooltipText,
-    tooltipText}) {
+    tooltipText
+  }) {
     return (
     <TooltipProvider>
       <div className="fixed inset-x-0 top-[110px] transform -translate-y-1/2 flex justify-between px-4 z-20 pointer-events-none">

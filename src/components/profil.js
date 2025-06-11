@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link.js";
+import dynamic from "next/dynamic";
 import { Button } from "@/components/ui/button.jsx";
 import { ScrollArea } from "@/components/ui/scroll-area"
 import StackLogos from "@/components/ui/stack";

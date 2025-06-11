@@ -9,10 +9,7 @@ import Link from "next/link.js";
 import { Switch } from "@/components/ui/switch";
 import { Button } from "@/components/ui/button.jsx"
 
-
-
-
-export default function Header({ goToProfile }) {
+export default function Header({ scrollTargetId }) {
 
   const { theme, setTheme } = useTheme();
 
@@ -29,6 +26,11 @@ export default function Header({ goToProfile }) {
     setTheme(checked ? "dark" : "light");
   };
 
+  const onProfileClick = () => {
+    const el = document.getElementById(scrollTargetId);
+    if (el) el.scrollTo({ left: 0, behavior: "smooth" });
+  };
+
     return (
         <header className="p-2
         fixed
@@ -38,7 +40,7 @@ export default function Header({ goToProfile }) {
         w-screen flex
         z-50"
           > <div className="flex items-center">
-            <Button variant="personal" onClick={goToProfile}>Profil</Button>
+            <Button variant="personal" onClick={onProfileClick}>Profil</Button>
             <div className="flex items-center space-x-2">
               {theme === "dark" ? (
                 <MoonIcon className="w-5 h-5 text-yellow-400" />
