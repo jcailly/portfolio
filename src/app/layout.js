@@ -7,8 +7,8 @@ import DeferredLink from "@/components/defered_link";
 
 
 export const metadata = {
-  title: "Jeremy Cailly | Développeur Full-Stack | Rouen, Normandie",
-  description: "Jeremy Cailly est un développeur Full-Stack (React, Tailwind, Next.js) basé à Rouen. Découvrez mes projets, mon parcours et contactez-moi.",
+  title: "Développeur Full-Stack à Rouen | Portfolio Jeremy Cailly",
+  description: "Jérémy Cailly — Développeur Full-Stack (React, Next.js, Tailwind CSS) basé à Rouen (76). Découvrez mes réalisations web performantes et contactez-moi pour vos projets numériques !",
   verification: {
     google: "ytLRCRiRszDUdQ807b6241iFKRSqGGvMmOspahx6-zo",
   },
@@ -28,10 +28,14 @@ export default function RootLayout({ children }) {
               "@context": "https://schema.org",
               "@type": "Person",
               "name": "Jérémy Cailly",
+              "image": "https://portfolio-jeremy-caillys-projects.vercel.app/PP.jpg",
+              "email": "mailto:jeremy.cailly@hotmail.fr",
+              "description": "Développeur Full-Stack basé à Rouen (76), spécialisé en React, Next.js et Tailwind CSS. Je conçois des applications web performantes, accessibles et évolutives.",
               "jobTitle": "Développeur Full Stack",
               "address": {
                 "@type": "PostalAddress",
                 "addressLocality": "Rouen",
+                "postalCode": "76000",
                 "addressRegion": "Normandie",
                 "addressCountry": "France"
               },

@@ -17,7 +17,7 @@ export default function Profil() {
                     <Image 
                         className="rounded-full shadow-sm dark:shadow-[#304384]"
                             src="/PP.jpg"
-                            alt="profil photo"
+                            alt="Portrait de Jérémy Cailly, développeur full-stack à Rouen"
                             width={180}
                             height={180}
                     />
@@ -31,13 +31,11 @@ export default function Profil() {
                             capacité d’adaptation au service de projets numériques. Actuellement en formation à Zone01
                             Normandie, j’apprends à concevoir et développer des applications web robustes, évolutives
                             et centrées utilisateur, en suivant une pédagogie par projets et en autonomie.</p>
-                            {/* <div className="flex justify-center m-4 p-4"> */}
                             <a href="/Jeremy_CAILLY_CV.pdf" target="_blank" rel="noopener noreferrer" className="flex justify-center">
                                 <Button variant="personal" >
                                     Téléchargez mon CV
                                 </Button>
                             </a>
-                            {/* </div> */}
                     </div>
                 </Card>
 
