@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://portfolio-jeremy-caillys-projects.vercel.app/sitemap.xml
+Sitemap: https://www.jeremycailly.dev/sitemap.xml

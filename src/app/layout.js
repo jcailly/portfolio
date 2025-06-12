@@ -28,7 +28,7 @@ export default function RootLayout({ children }) {
               "@context": "https://schema.org",
               "@type": "Person",
               "name": "Jérémy Cailly",
-              "image": "https://portfolio-jeremy-caillys-projects.vercel.app/PP.jpg",
+              "image": "https://www.jeremycailly.dev/PP.jpg",
               "email": "mailto:jeremy.cailly@hotmail.fr",
               "description": "Développeur Full-Stack basé à Rouen (76), spécialisé en React, Next.js et Tailwind CSS. Je conçois des applications web performantes, accessibles et évolutives.",
               "jobTitle": "Développeur Full Stack",
@@ -39,7 +39,7 @@ export default function RootLayout({ children }) {
                 "addressRegion": "Normandie",
                 "addressCountry": "France"
               },
-              "url": "https://portfolio-jeremy-caillys-projects.vercel.app/",
+              "url": "https://www.jeremycailly.dev/",
               "sameAs": [
                 "https://www.linkedin.com/in/j%C3%A9r%C3%A9my-cailly-605792155/",
                 "https://github.com/jcailly"

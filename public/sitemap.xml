@@ -5,13 +5,13 @@
    xmlns:xhtml="http://www.w3.org/1999/xhtml"
 >
   <url>
-    <loc>https://portfolio-jeremy-caillys-projects.vercel.app/</loc>
+    <loc>https://www.jeremycailly.dev/</loc>
     <lastmod>2025-06-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
 
     <image:image>
-      <image:loc>https://portfolio-jeremy-caillys-projects.vercel.app/PP.jpg</image:loc>
+      <image:loc>https://www.jeremycailly.dev/PP.jpg</image:loc>
       <image:caption>Photo de profil de Jérémy Cailly – Développeur Full-Stack Rouen</image:caption>
     </image:image>
   </url>
