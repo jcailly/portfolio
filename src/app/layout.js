@@ -10,7 +10,7 @@ export const metadata = {
   title: "Développeur Full-Stack à Rouen | Portfolio Jeremy Cailly",
   description: "Jérémy Cailly — Développeur Full-Stack (React, Next.js, Tailwind CSS) basé à Rouen (76). Découvrez mes réalisations web performantes et contactez-moi pour vos projets numériques !",
   verification: {
-    google: "ytLRCRiRszDUdQ807b6241iFKRSqGGvMmOspahx6-zo",
+    google: "XfxhjXwX3NfoTn0Lc08McZm-ohPKustbYg3Eq67YB8Q",
   },
 };
 
