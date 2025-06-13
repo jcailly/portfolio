@@ -1,10 +1,11 @@
 import Image from "next/image";
 import dynamic from 'next/dynamic';
 
-import Header from "../components/ui/header.js";
+// import Header from "../components/ui/header.js";
 import Slider from '@/components/slider.js';
 import ScrollControls from '@/components/Scroll_controller.js';
 
+const Header = dynamic(() => import("../components/ui/header.js"))
 const Profil = dynamic(() => import("../components/profil.js"))
 const Projet_1 = dynamic(() => import("../components/projet_1.js"))
 const Projet_2 = dynamic(() => import("../components/projet_2.js"))
