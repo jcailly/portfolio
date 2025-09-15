@@ -12,7 +12,9 @@ export const metadata = {
   verification: {
     google: "-WoINMZ2iVTTpdhRW5uBIEpbNoi2VxACKDY0zKTCKXM"
   },
-  canonical: "https://jeremycailly.dev/",
+  alternates: {
+    canonical: "https://jeremycailly.dev/",
+  }
 };
 
 export default function RootLayout({ children }) {
